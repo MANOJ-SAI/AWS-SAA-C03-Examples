@@ -1,4 +1,8 @@
 tasks:
+  - name: aws-cdk
+    before: |
+      npm install -g npm@11.2.0
+      npm i -g aws-cdk
   - name: terraform-cli
     before: |
       sudo apt-get update
