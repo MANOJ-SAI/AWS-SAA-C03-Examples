@@ -1,5 +1,8 @@
 tasks:
-  - name: aws-cdk
+  - name: pulumi
+    before: |
+      curl -fsSL https://get.pulumi.com | sh
+  - name: cdk
     before: |
       npm install -g npm@11.2.0
       npm i -g aws-cdk
