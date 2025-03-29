@@ -1,0 +1,19 @@
+{
+    "Statement": [
+       {
+          "Effect": "Allow",
+          "Principal": {
+             "AWS": "arn:aws:sts::146872062009:assumed-role/AWSReservedSSO_admin_857cdff8b277b4f8/MKoudodi@solifi.com"
+          },
+          "Action": [ 
+            "s3:ListBucket",
+            "s3:GetObject",
+            "s3:PutObject"
+         ],
+          "Resource": [
+            "arn:aws:s3:::bucket-policy-example-ms-1",
+            "arn:aws:s3:::bucket-policy-example-ms-1/*"
+          ]
+       }
+    ]
+ }
